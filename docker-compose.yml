@@ -4,7 +4,6 @@ services:
     build: .
     image: pcarorevuelta/omada-controller
     container_name: omada-controller
-    network_mode: host
     init: true
     ports:
       - 8080:8080/tcp
@@ -16,7 +15,7 @@ services:
       - 29812:29812/tcp
       - 29813:29813/tcp
     environment:
-      - TZ=Europe/Berlin
+      - TZ=Europe/Copenhagen
     volumes:
       - ./omada-volumenes/logs:/opt/tplink/EAPController/logs
       - ./omada-volumenes/data:/opt/tplink/EAPController/data
