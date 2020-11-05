@@ -1,5 +1,5 @@
 
-mkdir -p volumenes/{logs,data,work}
+#mkdir -p volumenes/{logs,data,work}
 
 #sudo chown -R 1000 volumenes
 #chmod 700 volumenes
