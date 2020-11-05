@@ -1,11 +1,9 @@
 
 mkdir -p volumenes/{logs,data,work}
 
-sudo chown -R 1000 volumenes
-chmod 700 volumenes
-
-
-
+#sudo chown -R 1000 volumenes
+#chmod 700 volumenes
+exit
 docker run -d --rm \
  --name omada-controller \
  -e TZ=Europe/Copenhagen \
